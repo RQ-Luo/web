@@ -1,7 +1,8 @@
 from .base import *
 
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1']
+STATIC_ROOT = os.path.join(BASE_DIR, 'collected_static')
 
 INSTALLED_APPS += [
     'debug_toolbar'
